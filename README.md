@@ -3,7 +3,7 @@ A web app that displays and tracks areas with cases of COVID-19. Submission For 
 
 ![Main][Main_Page]
 
-[Trackerz Web App - Running Demo](trackerz-ic-tech.herokuapp.com)
+![ZoomedIn][ZoomedIn]
 
 ## Table of contents
 * [General info](#general-info)
@@ -27,6 +27,12 @@ The project is built using flask for the backend and vanilla javascript, html, a
 These techs helped us build our product and most importantly the Covid 19 API that allowed us to query specific locations with details about the cases there. 
 
 ![Covid19API][Covid19API]
+
+Charts.js also helped with the visualization portion of our timegraph.
+
+![Timeline][Timeline]
+
+
 
 ## Setup Web App
 To run this project, make sure you have npm installed and perhaps installed react client as well. Also, since this is built using the NoSQL database, MongoDB, provision a database on MongoDB Atlas (https://www.mongodb.com/cloud/atlas) or by install MongoDB in your local machine. Follow the tutorial by installing MongoDB Compass (https://docs.mongodb.com/guides/server/install/).
@@ -148,3 +154,9 @@ https://github.com/HansGabriel/Magisterium/blob/main/media/template2.png
 https://github.com/HansGabriel/Magisterium/blob/main/media/template3.png
 [Covid19API]:
 https://github.com/Blue-Hacks-2021/Trackerz/blob/main/media/covid_api.png
+[ZoomedIn]:
+https://github.com/Blue-Hacks-2021/Trackerz/blob/main/media/zoomed-in.png
+[ZoomedOut]:
+https://github.com/Blue-Hacks-2021/Trackerz/blob/main/media/zoomed-out.png
+[Timeline]:
+https://github.com/Blue-Hacks-2021/Trackerz/blob/main/media/timeline.png
