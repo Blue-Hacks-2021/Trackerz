@@ -55,13 +55,13 @@ $ flask run
 The following instructions will open the app. You can type [localhost:5000](localhost.5000) in your favorite browser to start using the app. 
 
 ```sh
-127.0.0.1:8000
+127.0.0.1:5000
 ```
 
 or 
 
 ```sh
-localhost:8000
+localhost:5000
 ```
 
 Note that if you try to edit the javascript file, make sure to refresh the browser using **Ctrl + F5** as the javascript is usually cached in the browswer.
