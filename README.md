@@ -3,6 +3,8 @@ A web app that displays and tracks areas with cases of COVID-19. Submission For 
 
 ![ZoomedIn][ZoomedIn]
 
+![ZoomedOut][ZoomedOut]
+
 ## Table of contents
 * [General info](#general-info)
 * [Web App Tech](#web-app-tech)
