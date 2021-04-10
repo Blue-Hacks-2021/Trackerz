@@ -17,7 +17,7 @@ const drawChart = async (datesList, timelineList) => {
       },
       scales: {
         y: {
-          max: 1000
+          max: 400
         }
       }
     },
@@ -59,7 +59,7 @@ const getRegionTimeline = async (region) => {
 const mainChart = async () => {
   let timelineList = [];
   let datesList = [];
-  let colors = ["red", "#8e5ea2"];
+  let colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
   const regionDetails = await getRegionDetails()
   for (let i = 0; i < regionDetails.length; i++) {
     let lineChartObj = { 
@@ -74,7 +74,7 @@ const mainChart = async () => {
     } 
     lineChartObj['data'] = timelineDetails[0];
     lineChartObj['label'] = regionDetails[i];
-    lineChartObj['borderColor'] = colors[i % 2];
+    lineChartObj['borderColor'] = colors[i % 7];
     timelineList.push(lineChartObj);
   }
 

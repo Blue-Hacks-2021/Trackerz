@@ -180,7 +180,7 @@ const getHospitals = async () => {
     const response = await axios.get('https://covid19-api-philippines.herokuapp.com/api/list-of/hospitals?dataset=facilities_information');
     if (response.status === 200) { 
 
-      return response.data.data.map(obj => obj.name).slice(1, 10);
+      return response.data.data.map(obj => obj.name).slice(1, 100);
     }
   } catch (err) {
     console.log(err)
