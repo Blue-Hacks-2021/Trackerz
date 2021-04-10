@@ -32,7 +32,11 @@ Charts.js also helped with the visualization portion of our timegraph.
 
 ![Timeline][Timeline]
 
+Also we have created a simple RNN for forecasting the possible cases for a day based on previous data and pattern. It's not the best predictor and not implemented in the app but was done for experimentation purposes
 
+[Colab Link](https://colab.research.google.com/drive/1BrvZ3hvoNUSq1say7ZTesFMXhy2hi4Uw?usp=sharing)
+
+![Forecast][Forecast]
 
 ## Setup Web App
 To run this project, make sure you have installed python and git. Some of the API's like the google maps API used my Google Cloud Platform so if you want to use your own then just edit the API Key. Also make sure you've install virtualenv with pip to create a virutal environment for this project.
@@ -74,3 +78,5 @@ https://github.com/Blue-Hacks-2021/Trackerz/blob/main/media/zoomed-in.png
 https://github.com/Blue-Hacks-2021/Trackerz/blob/main/media/zoomed-out.png
 [Timeline]:
 https://github.com/Blue-Hacks-2021/Trackerz/blob/main/media/timeline.png
+[Forecast]:
+https://github.com/Blue-Hacks-2021/Trackerz/blob/main/media/forecast.png
