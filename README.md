@@ -1,8 +1,6 @@
 # Trackerz
 A web app that displays and tracks areas with cases of COVID-19. Submission For the Blue Hacks 2021
 
-![Main][Main_Page]
-
 ![ZoomedIn][ZoomedIn]
 
 ## Table of contents
