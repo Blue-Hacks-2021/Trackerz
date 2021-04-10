@@ -1,0 +1,31 @@
+{% extends "header.html" %}
+
+
+{% block content %}
+
+<h1>Philipines Covid Tracker Map</h1>
+
+<h4>Made By: IC Tech</h4>
+
+<div id="map"></div>
+
+<div class="chart-section">
+    <h1 class="timeline-title">Timeline Chart for Cases per Region</h1>
+    <canvas id="line-chart" width="800" height="250"></canvas>
+</div>
+
+<script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAM6jhOavWO5VBALwH3ObDXz7DT1S82m24&map_ids=a03f26c07b231105&libraries=visualization&callback=initMap" 
+></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+<script src="{{ url_for('static', filename='javascript/script.js') }}"></script>
+<script src="{{ url_for('static', filename='javascript/chart.js') }}"></script>
+
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+
+{% endblock %}

@@ -1,28 +1,29 @@
-// function initMap() {
-    // map = new google.maps.Map(document.getElementById('map'), {
-    //     center: {lat: 10.7683, lng: 122.5847},
-    //     zoom: 15,
-    //     mapId: 'b7b87ae2ae5f9ca2'
-    // });lat: 10.7683, lng: 122.5847
-// }
-
-// This example requires the Visualization library. Include the libraries=visualization
-// parameter when you first load the API. For example:
-
-
 let map, heatmap;
+
+// functions for data structures
+
+function getRegions() {
+  let regionLocations = [
+    new google.maps.LatLng(14.6091, 121.0223)
+  ]
+
+  return regionLocations;
+}
+
+
 
 async function initMap() {
   const points = await getPoints();
   const coordPoints = points[0];
   const names = points[1];
   const casesList = points[2];
+  const regionLocations = getRegions();
 
   const locations = coordPoints.map(point => changeCoordSystem(point));
 
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 13,
-    center: { lat: 10.7683, lng: 122.5847 },
+    zoom: 10,
+    center: { lat: 14.6091, lng: 121.0223 },
     mapTypeId: "satellite",
   });
   heatmap = new google.maps.visualization.HeatmapLayer({
@@ -78,6 +79,19 @@ function changeCoordSystem(coord) {
 }
 
 function formatInfoCard(title, content) {
+  const contentString =
+  '<div id="content">' +
+  '<div id="siteNotice">' +
+  "</div>" +
+  `<h1 id="firstHeading" class="firstHeading">${title}</h1>` + 
+  '<div id="bodyContent">' +
+  `<span class="captain"> <b>Covid Cases: </b> ${content} </span> ` + 
+  "</div>" +
+  "</div>";
+  return contentString;
+}
+
+function formatInfoCardRegion(title, content) {
   const contentString =
   '<div id="content">' +
   '<div id="siteNotice">' +
