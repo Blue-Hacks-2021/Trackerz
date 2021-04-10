@@ -1,66 +1,31 @@
-# Magisterium
-Guiding the learners today, to form the innovators of tomorrow.
+# Trackerz
+A web app that displays and tracks areas with cases of COVID-19. Submission For the Blue Hacks 2021
 
 ![Main][Main_Page]
 
-[Magisterium Web App - Running Demo](https://magistrum-308411.et.r.appspot.com/)
+[Trackerz Web App - Running Demo](trackerz-ic-tech.herokuapp.com)
 
 ## Table of contents
 * [General info](#general-info)
-* [Mobile App Tech](#mobile-app-tech)
 * [Web App Tech](#web-app-tech)
-* [Setup Mobile App](#setup-mobile-app)
 * [Setup Web App](#setup-web-app)
-* [How to use the Mobile App](#how-to-use-mobile-app)
 * [How to use the Web App](#how-to-use-web-app)
 
 ## General info
-This project is composed of two parts: The Mobile App built using Flutter and Firebase, and the
-Web App built using React, Node.js, and MongoDB and deployed using the Google Cloud Platform.
-Here are the following features of the app:
+As IC Tech, our plan is to build a web app that informs people about locations with Covid cases in the Philippines. In this way we may inform people about various statistics and even specifically pinpoint places where there are Covid Cases. This promotes safer travel and awareness among Citizens in the Philippines.
 
-- Sign Up as a tutor or as a student
-- Online booking of tutors by students
-- Choose your time, duration, and mode of meetup (online)
-- ✨Easy, Affordable, and Convenient ✨
+The project is built using flask for the backend and vanilla javascript, html, and css for the frontend. We used a variety of API's for our project. We want to also give a forecast about possible covid cases based on the cases pattern daily. Although not implemented within the web app, we are able to train and test the machin learning model.
 
-## Mobile App Tech
-- [Flutter] - 💯 Software Framework for building ios and android apps in one source code! 
-- [Android Studio] - 🤖 For creating an Android Phone Emulator
-- [Firebase] - 🔥 Google's Backend Framework for making server side development easier (no complex code)
-- [Express] - 🎉 fast node.js network app framework (used in the server side of the web app)
 
 ## Web App Tech
-- [MongoDB] - 🌱 Google's NoSQL database for quering json-like data responses
-- [Express] - 🎉 fast node.js network app framework 
-- [React] - ⚛️ Frontend Framework using javascript 
-- [Node.js] - 🧠 server side scripting using javascript  
 
-## Setup Mobile App
-In my case, I've developed in an android emulator by downloading Android Studio (https://developer.android.com/studio). Although it's also possible to use an ios emulator if you're using a mac via XCode (https://apps.apple.com/us/app/xcode/id497799835?mt=12). Furthermore, once you're done setting up your emulator or an actual physical device, then follow the setup below to run the flutter app. Also make sure you have flutter installed (https://flutter.dev/docs/get-started/install).Here's how to install:
+- 🗺️ Google Maps Javascript API
+- 👩‍⚕️ The Covid-19-API-Philippines-DOH [Link](https://documenter.getpostman.com/view/12463261/T1LV9jLU) 
+- 💹 Chart.js Library API
+- 🤖 ✨Tensorflow, Keras, Pandas ✨
 
+These techs helped us build
 
-```sh
-$ git clone https://github.com/HansGabriel/Magisterium.git
-$ cd MagisteriumMobileApp
-$ flutter clean
-$ flutter pub get
-```
-
-Since this is connected to a firebase client, we need to get the **configuration file** from firebase. Follow the process below:
-
-1. Go to https://console.firebase.google.com/
-2. Select your project
-3. On the left menu, click on settings > project settings
-4. Add an app or download the google-services.json file under the *Your Apps* section.
-5. Copy the **google-services.json** to the following path *android/app* if android or ios depending on your emulator. (not sure for ios, just follow the instructions in firebase)
-
-
-After doing so, you can run the app on your favorite emulator or physical mobile phone.
-
-```sh
-$ flutter pub run
-```
 
 
 ## Setup Web App
@@ -103,22 +68,6 @@ or
 ```sh
 localhost:8000
 ```
-
-
-## How to use the Mobile App
-
-![Template1][Template1]
-
-The mobile app for this hackathon is only accessible for students as there is no signing up for tutors functionality (wasn't able to finish up the whole functionality for this time period 😢). Anyways the mobile app allows students to Sign In or Register and directly find the tutor they want and book them. Booking is as simple as giving your time details and adding a 💌 message to the 👨‍🏫 tutor.
-
-![Template2][Template2]
-
-This mobile app was built using Flutter as it is easy to make designs and functionalities plus the advantage of doing a cross platform to 🍎 ios and 🤖 android makes it a great framework for mobile development. Also 🔥 firebase was used to supply the backend details and the app is also connected to the express server of the web app to fetch API's 📶.
-
-![Template3][Template3]
-
-Although this app works already, we unfortunately can't deploy it since the process for launching a mobile app requires 💸 payments and needs to ✅ verified after a long process. Anyways, we will show a demo of the mobile app in a video.
-
 
 ## How to use the Web App
 
