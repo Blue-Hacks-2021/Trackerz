@@ -14,7 +14,7 @@ A web app that displays and tracks areas with cases of COVID-19. Submission For 
 ## General info
 As IC Tech, our plan is to build a web app that informs people about locations with Covid cases in the Philippines. In this way we may inform people about various statistics and even specifically pinpoint places where there are Covid Cases. This promotes safer travel and awareness among Citizens in the Philippines.
 
-The project is built using flask for the backend and vanilla javascript, html, and css for the frontend. We used a variety of API's for our project. We want to also give a forecast about possible covid cases based on the cases pattern daily. Although not implemented within the web app, we are able to train and test the machin learning model.
+The project is built using flask for the backend and vanilla javascript, html, and css for the frontend. We used a variety of API's for our project. We want to also give a forecast about possible covid cases based on the cases pattern daily. Although not implemented within the web app, we are able to train and test the machine learning model.
 
 
 ## Web App Tech
@@ -26,10 +26,7 @@ The project is built using flask for the backend and vanilla javascript, html, a
 
 These techs helped us build our product and most importantly the Covid 19 API that allowed us to query specific locations with details about the cases there. 
 
-[Covid19API]:
-https://github.com/Blue-Hacks-2021/Trackerz/blob/main/media/covid_api.png
-
-
+![Covid19API][Covid19API]
 
 ## Setup Web App
 To run this project, make sure you have npm installed and perhaps installed react client as well. Also, since this is built using the NoSQL database, MongoDB, provision a database on MongoDB Atlas (https://www.mongodb.com/cloud/atlas) or by install MongoDB in your local machine. Follow the tutorial by installing MongoDB Compass (https://docs.mongodb.com/guides/server/install/).
@@ -149,3 +146,5 @@ https://github.com/HansGabriel/Magisterium/blob/main/media/template1.png
 https://github.com/HansGabriel/Magisterium/blob/main/media/template2.png
 [Template3]:
 https://github.com/HansGabriel/Magisterium/blob/main/media/template3.png
+[Covid19API]:
+https://github.com/Blue-Hacks-2021/Trackerz/blob/main/media/covid_api.png
