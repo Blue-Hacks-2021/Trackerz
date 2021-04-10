@@ -24,7 +24,10 @@ The project is built using flask for the backend and vanilla javascript, html, a
 - 💹 Chart.js Library API
 - 🤖 ✨Tensorflow, Keras, Pandas ✨
 
-These techs helped us build
+These techs helped us build our product and most importantly the Covid 19 API that allowed us to query specific locations with details about the cases there. 
+
+[Covid19API]:
+https://github.com/Blue-Hacks-2021/Trackerz/blob/main/media/covid_api.png
 
 
 
