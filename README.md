@@ -12,7 +12,7 @@ A web app that displays and tracks areas with cases of COVID-19. Submission For 
 * [How to use the Web App](#how-to-use-web-app)
 
 ## General info
-As IC Tech, our plan is to build a web app that informs people about locations with Covid cases in the Philippines. In this way we may inform people about various statistics and even specifically pinpoint places where there are Covid Cases. This promotes safer travel and awareness among Citizens in the Philippines.
+As Zenin Tech, our plan is to build a web app that informs people about locations with Covid cases in the Philippines. In this way we may inform people about various statistics and even specifically pinpoint places where there are Covid Cases. This promotes safer travel and awareness among Citizens in the Philippines.
 
 The project is built using flask for the backend and vanilla javascript, html, and css for the frontend. We used a variety of API's for our project. We want to also give a forecast about possible covid cases based on the cases pattern daily. Although not implemented within the web app, we are able to train and test the machine learning model.
 
